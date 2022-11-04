@@ -1,0 +1,83 @@
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree";
+}
+
+.header {
+  display: grid;
+  justify-items: center;
+  gap: 59px;
+  max-width: 1878px;
+  padding: 0 51px;
+  margin: auto;
+  /* height: 100vh; */
+  background-image: url(./images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+}
+
+.logo {
+  padding-top: 120px;
+}
+
+.header__content {
+  text-align: center;
+}
+
+.heading {
+  color: var(--dark-grayish-blue);
+  font-size: 45px;
+  letter-spacing: -0.75px;
+  padding-bottom: 20px;
+}
+
+.subheading {
+  max-width: 700px;
+  font-size: 19px;
+  padding-bottom: 40px;
+  letter-spacing: 0.15;
+  font-weight: 400;
+  color: var(--grayish-blue);
+}
+
+.btn {
+  padding: 10px 30px;
+  outline: none;
+  color: white;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.15;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.ios {
+  background-color: var(--strong-cyan);
+  margin-right: 10px;
+}
+
+.mac {
+  background-color: var(--light-blue);
+}
+
+@media screen and (max-width: 540px) {
+  .download {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ios {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
